@@ -1,6 +1,4 @@
-# Chart and Graph Library for Android
-
-## What is GraphView
+# GraphView
 
 GraphView is a library for Android to programmatically create
 flexible and nice-looking diagrams.
@@ -39,12 +37,15 @@ Supported graph types:
 
 1) Add gradle dependency:
 ```
-implementation 'com.jjoe64:graphview:4.2.2'
+maven { url "https://jitpack.io" }
+```
+```
+implementation 'io.github.marcocipriani01.graphview:1.0.0'
 ```
 
 2) Add view to layout:
 ```
-<com.jjoe64.graphview.GraphView
+<io.github.marcocipriani01.graphview.GraphView
         android:layout_width="match_parent"
         android:layout_height="200dip"
         android:id="@+id/graph" />
