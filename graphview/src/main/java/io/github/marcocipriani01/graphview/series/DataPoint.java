@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jjoe64.graphview.series;
+package io.github.marcocipriani01.graphview.series;
 
 import androidx.annotation.NonNull;
 

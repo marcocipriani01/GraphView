@@ -14,12 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jjoe64.graphview;
+package io.github.marcocipriani01.graphview;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;
 
-import com.jjoe64.graphview.series.Series;
+import io.github.marcocipriani01.graphview.series.Series;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -77,7 +77,7 @@ public class SecondScale {
     /**
      * creates the second scale.
      * normally you do not call this contructor.
-     * Use {@link com.jjoe64.graphview.GraphView#getSecondScale()}
+     * Use {@link GraphView#getSecondScale()}
      * in order to get the instance.
      */
     SecondScale(GraphView graph) {

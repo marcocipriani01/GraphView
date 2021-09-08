@@ -14,15 +14,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jjoe64.graphview;
+package io.github.marcocipriani01.graphview;
 
-import com.jjoe64.graphview.series.DataPointInterface;
+import io.github.marcocipriani01.graphview.series.DataPointInterface;
+import io.github.marcocipriani01.graphview.series.BarGraphSeries;
 
 /**
  * you can change the color depending on the value.
  * takes only effect for BarGraphSeries.
  *
- * @see com.jjoe64.graphview.series.BarGraphSeries#setValueDependentColor(ValueDependentColor)
+ * @see BarGraphSeries#setValueDependentColor(ValueDependentColor)
  */
 public interface ValueDependentColor<T extends DataPointInterface> {
     /**

@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jjoe64.graphview;
+package io.github.marcocipriani01.graphview;
 
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -29,12 +29,16 @@ import android.widget.OverScroller;
 import androidx.core.view.ViewCompat;
 import androidx.core.widget.EdgeEffectCompat;
 
-import com.jjoe64.graphview.series.DataPointInterface;
-import com.jjoe64.graphview.series.Series;
+import io.github.marcocipriani01.graphview.series.DataPointInterface;
+import io.github.marcocipriani01.graphview.series.Series;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import io.github.marcocipriani01.graphview.series.BarGraphSeries;
+import io.github.marcocipriani01.graphview.series.LineGraphSeries;
+import io.github.marcocipriani01.graphview.series.PointsGraphSeries;
 
 /**
  * This is the default implementation for the viewport.
@@ -42,9 +46,9 @@ import java.util.List;
  * where there is a horizontal x-axis and a
  * vertical y-axis.
  * This viewport is compatible with
- * - {@link com.jjoe64.graphview.series.BarGraphSeries}
- * - {@link com.jjoe64.graphview.series.LineGraphSeries}
- * - {@link com.jjoe64.graphview.series.PointsGraphSeries}
+ * - {@link BarGraphSeries}
+ * - {@link LineGraphSeries}
+ * - {@link PointsGraphSeries}
  *
  * @author jjoe64
  */

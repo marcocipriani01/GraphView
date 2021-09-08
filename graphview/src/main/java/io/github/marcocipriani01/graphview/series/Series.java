@@ -14,11 +14,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jjoe64.graphview.series;
+package io.github.marcocipriani01.graphview.series;
 
 import android.graphics.Canvas;
 
-import com.jjoe64.graphview.GraphView;
+import io.github.marcocipriani01.graphview.GraphView;
 
 import java.util.Iterator;
 
@@ -27,7 +27,7 @@ import java.util.Iterator;
  * on the graph.
  * You can implement this in order to create a completely
  * custom series type.
- * But it is recommended to extend {@link com.jjoe64.graphview.series.BaseSeries} or another
+ * But it is recommended to extend {@link BaseSeries} or another
  * implemented Series class to save time.
  * Anyway this interface can make sense if you want to implement
  * a custom data provider, because BaseSeries uses a internal Array to store

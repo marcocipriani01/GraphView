@@ -14,12 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jjoe64.graphview.series;
+package io.github.marcocipriani01.graphview.series;
 
 import android.graphics.Canvas;
 import android.graphics.PointF;
 
-import com.jjoe64.graphview.GraphView;
+import io.github.marcocipriani01.graphview.GraphView;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -40,7 +40,7 @@ import java.util.NoSuchElementException;
  *
  * This implementation uses a internal Array to store
  * the data. If you want to implement a custom data provider
- * you may want to implement {@link com.jjoe64.graphview.series.Series}.
+ * you may want to implement {@link Series}.
  *
  * @author jjoe64
  */

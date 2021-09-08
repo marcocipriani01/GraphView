@@ -14,12 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jjoe64.graphview.helper;
+package io.github.marcocipriani01.graphview.helper;
 
-import com.jjoe64.graphview.DefaultLabelFormatter;
-import com.jjoe64.graphview.GraphView;
-import com.jjoe64.graphview.LabelFormatter;
-import com.jjoe64.graphview.Viewport;
+import io.github.marcocipriani01.graphview.DefaultLabelFormatter;
+import io.github.marcocipriani01.graphview.GraphView;
+import io.github.marcocipriani01.graphview.LabelFormatter;
+import io.github.marcocipriani01.graphview.Viewport;
 
 /**
  * Use this label formatter to show static labels.

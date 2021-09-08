@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jjoe64.graphview.series;
+package io.github.marcocipriani01.graphview.series;
 
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -24,7 +24,7 @@ import android.view.animation.AccelerateInterpolator;
 
 import androidx.core.view.ViewCompat;
 
-import com.jjoe64.graphview.GraphView;
+import io.github.marcocipriani01.graphview.GraphView;
 
 import java.util.Iterator;
 

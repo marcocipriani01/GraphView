@@ -14,13 +14,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jjoe64.graphview;
+package io.github.marcocipriani01.graphview;
 
 /**
  * Interface to use as label formatter.
  * Implement this in order to generate
  * your own labels format.
- * It is recommended to override {@link com.jjoe64.graphview.DefaultLabelFormatter}.
+ * It is recommended to override {@link DefaultLabelFormatter}.
  *
  * @author jjoe64
  */

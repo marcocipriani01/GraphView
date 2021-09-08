@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jjoe64.graphview.helper;
+package io.github.marcocipriani01.graphview.helper;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -22,13 +22,13 @@ import android.graphics.Color;
 import android.util.AttributeSet;
 import android.util.Log;
 
-import com.jjoe64.graphview.GraphView;
-import com.jjoe64.graphview.R;
-import com.jjoe64.graphview.series.BarGraphSeries;
-import com.jjoe64.graphview.series.BaseSeries;
-import com.jjoe64.graphview.series.DataPoint;
-import com.jjoe64.graphview.series.LineGraphSeries;
-import com.jjoe64.graphview.series.PointsGraphSeries;
+import io.github.marcocipriani01.graphview.GraphView;
+import io.github.marcocipriani01.graphview.R;
+import io.github.marcocipriani01.graphview.series.BarGraphSeries;
+import io.github.marcocipriani01.graphview.series.BaseSeries;
+import io.github.marcocipriani01.graphview.series.DataPoint;
+import io.github.marcocipriani01.graphview.series.LineGraphSeries;
+import io.github.marcocipriani01.graphview.series.PointsGraphSeries;
 
 /**
  * helper class to use GraphView directly
@@ -46,7 +46,7 @@ import com.jjoe64.graphview.series.PointsGraphSeries;
  * Example:
  * <pre>
  * {@code
- *  <com.jjoe64.graphview.helper.GraphViewXML
+ *  <GraphViewXML
  *      android:layout_width="match_parent"
  *      android:layout_height="100dip"
  *      app:seriesData="0=5;2=5;3=0;4=2"

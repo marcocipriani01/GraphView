@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jjoe64.graphview;
+package io.github.marcocipriani01.graphview;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -31,12 +31,14 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.jjoe64.graphview.series.BaseSeries;
-import com.jjoe64.graphview.series.Series;
+import io.github.marcocipriani01.graphview.series.BaseSeries;
+import io.github.marcocipriani01.graphview.series.Series;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
+
+import io.github.marcocipriani01.graphview.series.DataPointInterface;
 
 /**
  * @author jjoe64
@@ -169,7 +171,7 @@ public class GraphView extends View {
     /**
      * important: do not do modifications on the list
      * object that will be returned.
-     * Use {@link #removeSeries(com.jjoe64.graphview.series.Series)} and {@link #addSeries(com.jjoe64.graphview.series.Series)}
+     * Use {@link #removeSeries(Series)} and {@link #addSeries(Series)}
      *
      * @return all series
      */
@@ -183,8 +185,8 @@ public class GraphView extends View {
      * recalculate the viewport.
      * This will be called when a new series
      * was added or removed and when data
-     * was appended via {@link com.jjoe64.graphview.series.BaseSeries#appendData(com.jjoe64.graphview.series.DataPointInterface, boolean, int)}
-     * or {@link com.jjoe64.graphview.series.BaseSeries#resetData(com.jjoe64.graphview.series.DataPointInterface[])}.
+     * was appended via {@link BaseSeries#appendData(DataPointInterface, boolean, int)}
+     * or {@link BaseSeries#resetData(DataPointInterface[])}.
      *
      * @param keepLabelsSize true if you don't want
      *                       to recalculate the size of
@@ -289,7 +291,7 @@ public class GraphView extends View {
 
     /**
      * @return the viewport of the Graph.
-     * @see com.jjoe64.graphview.Viewport
+     * @see Viewport
      */
     public Viewport getViewport() {
         return mViewport;
@@ -374,7 +376,7 @@ public class GraphView extends View {
 
     /**
      * @return the legend renderer.
-     * @see com.jjoe64.graphview.LegendRenderer
+     * @see LegendRenderer
      */
     public LegendRenderer getLegendRenderer() {
         return mLegendRenderer;

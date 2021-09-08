@@ -14,14 +14,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jjoe64.graphview.series;
+package io.github.marcocipriani01.graphview.series;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Point;
 
-import com.jjoe64.graphview.GraphView;
+import io.github.marcocipriani01.graphview.GraphView;
 
 import java.util.Iterator;
 
@@ -56,7 +56,7 @@ public class PointsGraphSeries<E extends DataPointInterface> extends BaseSeries<
     /**
      * choose a predefined shape to draw for
      * each data point.
-     * You can also draw a custom drawing via {@link com.jjoe64.graphview.series.PointsGraphSeries.CustomShape}
+     * You can also draw a custom drawing via {@link PointsGraphSeries.CustomShape}
      */
     public enum Shape {
         /**

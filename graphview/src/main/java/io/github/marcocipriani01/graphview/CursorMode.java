@@ -1,4 +1,4 @@
-package com.jjoe64.graphview;
+package io.github.marcocipriani01.graphview;
 
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -9,9 +9,9 @@ import android.graphics.RectF;
 import android.util.TypedValue;
 import android.view.MotionEvent;
 
-import com.jjoe64.graphview.series.BaseSeries;
-import com.jjoe64.graphview.series.DataPointInterface;
-import com.jjoe64.graphview.series.Series;
+import io.github.marcocipriani01.graphview.series.BaseSeries;
+import io.github.marcocipriani01.graphview.series.DataPointInterface;
+import io.github.marcocipriani01.graphview.series.Series;
 
 import java.util.HashMap;
 import java.util.Map;

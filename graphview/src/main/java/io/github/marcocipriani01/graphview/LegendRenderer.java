@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jjoe64.graphview;
+package io.github.marcocipriani01.graphview;
 
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -25,7 +25,7 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.util.TypedValue;
 
-import com.jjoe64.graphview.series.Series;
+import io.github.marcocipriani01.graphview.series.Series;
 
 import java.util.ArrayList;
 import java.util.List;

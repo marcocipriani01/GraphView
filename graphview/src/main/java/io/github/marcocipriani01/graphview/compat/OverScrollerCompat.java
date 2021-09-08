@@ -14,22 +14,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jjoe64.graphview.series;
+package io.github.marcocipriani01.graphview.compat;
+
+import android.annotation.TargetApi;
+import android.os.Build;
+import android.widget.OverScroller;
 
 /**
- * Listener for the tap event which will be
- * triggered when the user touches on a datapoint.
- *
- * Use this in {@link com.jjoe64.graphview.series.BaseSeries#setOnDataPointTapListener(OnDataPointTapListener)}
- *
- * @author jjoe64
+ * A utility class for using {@link android.widget.OverScroller} in a backward-compatible fashion.
  */
-public interface OnDataPointTapListener {
+@SuppressWarnings("unused")
+public class OverScrollerCompat {
     /**
-     * gets called when the user touches on a datapoint.
-     *
-     * @param series the corresponding series
-     * @param dataPoint the data point that was tapped on
+     * Disallow instantiation.
      */
-    void onTap(Series series, DataPointInterface dataPoint);
+    private OverScrollerCompat() {
+    }
+    /**
+     * @see android.view.ScaleGestureDetector#getCurrentSpanY()
+     */
+    @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
+    public static float getCurrVelocity(OverScroller overScroller) {
+        return overScroller.getCurrVelocity();
+    }
 }

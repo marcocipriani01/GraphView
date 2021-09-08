@@ -14,13 +14,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jjoe64.graphview.series;
+package io.github.marcocipriani01.graphview.series;
 
 /**
  * interface of data points. Implement this in order
- * to use your class in {@link com.jjoe64.graphview.series.Series}.
+ * to use your class in {@link Series}.
  *
- * You can also use the default implementation {@link com.jjoe64.graphview.series.DataPoint} so
+ * You can also use the default implementation {@link DataPoint} so
  * you do not have to implement it for yourself.
  *
  * @author jjoe64
