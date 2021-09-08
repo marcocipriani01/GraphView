@@ -1,0 +1,85 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core:1.6.0'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                group = 'io.github.marcocipriani01'
+                artifactId = 'LivePhotoView'
+                version = '3.0.1'
+
+                // Adds javadocs and sources as separate jars.
+                artifact androidJavadocsJar
+                artifact(sourceJar)
+
+                pom {
+                    name = 'LivePhotoView'
+                    description = 'A simple ImageView that support zooming, and maintains it while switching between images.'
+                    url = 'https://github.com/marcocipriani01/PhotoView'
+                    licenses {
+                        license {
+                            name = 'The Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+                    developers {
+                        developer {
+                            id = 'marcocipriani01'
+                            name = 'Marco Cipriani'
+                        }
+                    }
+                    scm {
+                        connection = 'scm:git@github.com/marcocipriani01/PhotoView.git'
+                        developerConnection = 'scm:git@github.com/marcocipriani01/PhotoView.git'
+                        url = 'https://github.com/marcocipriani01/PhotoView'
+                    }
+                }
+            }
+        }
+    }
+}
+
+task androidJavadocs(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    android.libraryVariants.all { variant ->
+        if (variant.name == 'release') {
+            owner.classpath += variant.javaCompileProvider.get().classpath
+        }
+    }
+    exclude '**/R.html', '**/R.*.html', '**/index.html'
+}
+
+task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
+    archiveClassifier.set('javadoc')
+    from androidJavadocs.destinationDir
+}
+
+task sourceJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier "sources"
+}
