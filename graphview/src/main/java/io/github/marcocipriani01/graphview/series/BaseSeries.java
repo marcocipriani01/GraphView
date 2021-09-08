@@ -54,8 +54,8 @@ public abstract class BaseSeries<E extends DataPointInterface> implements Series
      * stores the used coordinates to find the
      * corresponding data point on a tap
      *
-     * Key -> x/y pixel
-     * Value -> Plotted Datapoint
+     * Key = x/y pixel
+     * Value = Plotted Datapoint
      *
      * will be filled while drawing via {@link #registerDataPoint(float, float, DataPointInterface)}
      */
@@ -424,10 +424,10 @@ public abstract class BaseSeries<E extends DataPointInterface> implements Series
      *
      * @param dataPoint values the values must be in the correct order!
      *                  x-value has to be ASC. First the lowest x value and at least the highest x value.
-     * @param scrollToEnd true -> graphview will scroll to the end (maxX)
+     * @param scrollToEnd true = graphview will scroll to the end (maxX)
      * @param maxDataPoints if max data count is reached, the oldest data
      *                      value will be lost to avoid memory leaks
-     * @param silent    set true to avoid rerender the graph
+     * @param silent    set true to avoid rendering the graph
      */
     public void appendData(E dataPoint, boolean scrollToEnd, int maxDataPoints, boolean silent) {
         checkValueOrder(dataPoint);
@@ -480,7 +480,7 @@ public abstract class BaseSeries<E extends DataPointInterface> implements Series
      *
      * @param dataPoint values the values must be in the correct order!
      *                  x-value has to be ASC. First the lowest x value and at least the highest x value.
-     * @param scrollToEnd true -> graphview will scroll to the end (maxX)
+     * @param scrollToEnd true = graphview will scroll to the end (maxX)
      * @param maxDataPoints if max data count is reached, the oldest data
      *                      value will be lost to avoid memory leaks
      */

@@ -757,8 +757,8 @@ public class Viewport {
     }
 
     /**
-     * @param completeRange if true -> minX of the complete range of all series
-     *                      if false -> minX of the current visible viewport
+     * @param completeRange if true then minX of the complete range of all series
+     *                      if false then minX of the current visible viewport
      * @return the min x value
      */
     public double getMinX(boolean completeRange) {
@@ -770,8 +770,8 @@ public class Viewport {
     }
 
     /**
-     * @param completeRange if true -> maxX of the complete range of all series
-     *                      if false -> maxX of the current visible viewport
+     * @param completeRange if true then maxX of the complete range of all series
+     *                      if false then maxX of the current visible viewport
      * @return the max x value
      */
     public double getMaxX(boolean completeRange) {
@@ -783,8 +783,8 @@ public class Viewport {
     }
 
     /**
-     * @param completeRange if true -> minY of the complete range of all series
-     *                      if false -> minY of the current visible viewport
+     * @param completeRange if true then minY of the complete range of all series
+     *                      if false then minY of the current visible viewport
      * @return the min y value
      */
     public double getMinY(boolean completeRange) {
@@ -796,8 +796,8 @@ public class Viewport {
     }
 
     /**
-     * @param completeRange if true -> maxY of the complete range of all series
-     *                      if false -> maxY of the current visible viewport
+     * @param completeRange if true then maxY of the complete range of all series
+     *                      if false then maxY of the current visible viewport
      * @return the max y value
      */
     public double getMaxY(boolean completeRange) {
