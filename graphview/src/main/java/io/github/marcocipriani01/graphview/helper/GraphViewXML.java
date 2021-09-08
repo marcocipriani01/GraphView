@@ -38,10 +38,10 @@ import io.github.marcocipriani01.graphview.series.PointsGraphSeries;
  * in the format: "X=Y;X=Y;..." e.g. "0=5.0;1=5;2=4;3=9"
  *
  * Other styling options:
- * <li>app:seriesType="line|bar|points"</li>
- * <li>app:seriesColor="#ff0000"</li>
- * <li>app:seriesTitle="foobar" - if this is set, the legend will be drawn</li>
- * <li>android:title="foobar"</li>
+ * - app:seriesType="line|bar|points"
+ * - app:seriesColor="#ff0000"
+ * - app:seriesTitle="foobar" - if this is set, the legend will be drawn
+ * - android:title="foobar"
  *
  * Example:
  * <pre>

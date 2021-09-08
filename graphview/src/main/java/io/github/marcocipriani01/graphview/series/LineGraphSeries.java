@@ -604,7 +604,7 @@ public class LineGraphSeries<E extends DataPointInterface> extends BaseSeries<E>
     /**
      * @param dataPoint     values the values must be in the correct order!
      *                      x-value has to be ASC. First the lowest x value and at least the highest x value.
-     * @param scrollToEnd   true => graphview will scroll to the end (maxX)
+     * @param scrollToEnd   true -> graphview will scroll to the end (maxX)
      * @param maxDataPoints if max data count is reached, the oldest data
      *                      value will be lost to avoid memory leaks
      * @param silent        set true to avoid rerender the graph

@@ -305,7 +305,7 @@ public class LegendRenderer {
      * the width of the box exclusive padding
      *
      * @return  the width of the box
-     *          0 => auto
+     *          0 -> auto
      */
     public int getWidth() {
         return mStyles.width;
@@ -314,7 +314,7 @@ public class LegendRenderer {
     /**
      * the width of the box exclusive padding
      * @param width     the width of the box exclusive padding
-     *                  0 => auto
+     *                  0 -> auto
      */
     public void setWidth(int width) {
         mStyles.width = width;

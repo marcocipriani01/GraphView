@@ -54,15 +54,15 @@ public class BarGraphSeries<E extends DataPointInterface> extends BaseSeries<E> 
 
     /**
      * spacing between the bars in percentage.
-     * 0 => no spacing
-     * 100 => the space between the bars is as big as the bars itself
+     * 0 -> no spacing
+     * 100 -> the space between the bars is as big as the bars itself
      */
     private int mSpacing;
 
     /**
      * width of a data point
-     * 0 => no prior knowledge of sampling period, interval between bars will be calculated automatically
-     * >0 => value is the total distance from one bar to another
+     * 0 -> no prior knowledge of sampling period, interval between bars will be calculated automatically
+     * >0 -> value is the total distance from one bar to another
      */
     private double mDataWidth;
 
@@ -383,8 +383,8 @@ public class BarGraphSeries<E extends DataPointInterface> extends BaseSeries<E> 
 
     /**
      * @param mSpacing  spacing between the bars in percentage.
-     *                  0 => no spacing
-     *                  100 => the space between the bars is as big as the bars itself
+     *                  0 -> no spacing
+     *                  100 -> the space between the bars is as big as the bars itself
      */
     public void setSpacing(int mSpacing) {
         this.mSpacing = mSpacing;
@@ -399,8 +399,8 @@ public class BarGraphSeries<E extends DataPointInterface> extends BaseSeries<E> 
 
     /**
      * @param mDataWidth    width of a data point (sampling period)
-     *                      0 => no prior knowledge of sampling period, interval between bars will be calculated automatically
- *                          >0 => value is the total distance from one bar to another
+     *                      0 -> no prior knowledge of sampling period, interval between bars will be calculated automatically
+ *                          >0 -> value is the total distance from one bar to another
      */
     public void setDataWidth(double mDataWidth) {
         this.mDataWidth = mDataWidth;
