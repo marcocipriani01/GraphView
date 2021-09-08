@@ -40,7 +40,7 @@ Supported graph types:
 maven { url "https://jitpack.io" }
 ```
 ```
-implementation 'io.github.marcocipriani01.graphview:1.0.0'
+implementation 'com.github.marcocipriani01.graphview:1.0.0'
 ```
 
 2) Add view to layout:
